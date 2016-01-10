@@ -7,6 +7,7 @@ define(['angular']/*deps*/, function (angular)/*invoke*/ {
       'ui.router'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.when('', '/');
       $stateProvider.state("home", {
         url: "/",
         templateUrl: "/views/main.html"

@@ -27,6 +27,11 @@ require.config({
         'angular'
       ],
       exports: 'uiRouter'
+    },
+    bootstrap: {
+      deps: [
+        'jquery'
+      ]
     }
   },
   priority: [
@@ -46,13 +51,14 @@ require([
   'angular',
   'angular-cookies',
   'angular-resource',
-  'angular-ui-router'
-], function(app, $, angular, ngCookies, ngResource, uiRouter) {
+  'angular-ui-router',
+  'bootstrap'
+], function (app, $, angular, ngCookies, ngResource, uiRouter, bootstrap) {
   'use strict';
   /* jshint ignore:start */
   var $html = angular.element(document.getElementsByTagName('html')[0]);
   /* jshint ignore:end */
-  angular.element().ready(function() {
+  angular.element().ready(function () {
     angular.resumeBootstrap([app.name]);
   });
 });
