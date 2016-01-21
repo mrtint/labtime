@@ -34,6 +34,7 @@
     "jshint-stylish": "^1.0.0",
     "mongodb": "^2.1.4",
     "mongoose": "^4.3.5",
+    "mongoose-id-autoinc": "^2013.7.14-4",
     "time-grunt": "^1.0.0"
   },
   "engines": {
